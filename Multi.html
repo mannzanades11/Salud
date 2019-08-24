@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>
+Multimedia - Tweakypedia
+</title>
+</head>
+<style>
+.mydivclass {
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+
+.header {
+  padding: 35px;
+  text-align: center;
+  background: #f7f7f7;
+  color: white;
+  font-size: 30px;
+  background:-moz-linear-gradient(top, #ffffff 0%,#ffffff 50%,#f7f7f7 100%);
+  background:-webkit-linear-gradient(top, #ffffff 0%,#ffffff 50%,#f7f7f7 100%);
+  background:linear-gradient(top, #ffffff 0%,#ffffff 50%,#f7f7f7 100%);
+  width:fill;
+  display:block;
+  margin-top: -29px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+div.b1{
+  content:””;
+  height:1px;
+  background:-moz-linear-gradient(left, #add4ff 0%,#add4ff 50%,#add4ff 100%);
+  background:-webkit-linear-gradient(left, #add4ff 0%,#add4ff 50%,#add4ff 100%);
+  background:linear-gradient(left, #add4ff 0%,#add4ff 50%,#add4ff 100%);
+  width:fill;
+  display:block;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#h1{
+font-family:Arial;
+font-size:30px;
+margin-left:15px;
+align:left;
+margin-top:30px;
+font-weight:normal;
+line-height: 80%;
+text-decoration:none;
+}
+
+#p1{
+font-family:Arial;
+font-size:15px;
+margin-left:40px;
+align:left;
+letter-spacing: 0.4px;
+line-height: 50%;
+}
+
+body{
+font-family:Arial;
+}
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color: blue;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul.dot {
+  list-style-type: disc;
+}
+
+
+a:active {
+  text-decoration: underline;
+}
+
+<!--_____________________________________________________________-->
+
+p.a1  {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+a.a1:link {
+  color: blue;
+}
+a.a1:visited {
+  color: blue;
+}
+
+a.a1:link {
+  text-decoration: none;
+}
+a.a1:visited {
+  text-decoration: none;
+}
+
+a.a1:hover {
+  text-decoration: underline;
+}
+
+
+p.margin{
+margin-left:-69px
+}
+p.margin2{
+margin-left:-10px
+}
+
+p.a1  {
+  float: left;
+  font-size:14px;
+}
+
+p a.a1 {
+  display: block;
+  color: blue;
+  padding: 15px 12px;
+  text-decoration: none;
+  margin-top:-25px;
+  border-right: 1px solid;
+border-image: 
+    linear-gradient(
+      to bottom, 
+      white 1%, #add4ff ) 1 100%;
+  background:-moz-linear-gradient(top, #ffffff 0%,#ffffff 50%,#e5f1ff 100%);
+  background:-webkit-linear-gradient(top, #ffffff 00%,#ffffff 50%,#e5f1ff 100%);
+  background:linear-gradient(top, #ffffff 0%,#ffffff 50%,#e5f1ff 100%);
+  width:fill;
+  display:block;
+}
+#a1 {
+  display: block;
+  color: black;
+  padding: 15px 12px;
+  text-decoration: none;
+  margin-top:-24px;
+  border-right: 1px solid;
+border-image: 
+    linear-gradient(
+      to bottom, 
+      white 1%, #add4ff ) 1 100%;
+  background:-moz-linear-gradient(top, #ffffff 0%,#ffffff 50%,#ffffff 100%);
+  background:-webkit-linear-gradient(top, #ffffff 00%,#ffffff 50%,#ffffff 100%);
+  background:linear-gradient(top, #ffffff 0%,#ffffff 50%,#ffffff 100%);
+  width:fill;
+  display:block;
+}
+
+
+#search{
+width:500px;
+float:right;
+margin-top:-10px;
+margin-right:-130px;
+}
+
+#div1{
+  content:””;
+  height:1px;
+  margin-left:15px;
+  margin-top:-15px;
+  background:-moz-linear-gradient(left, #b0b0b0 0%,#b0b0b0 50%,#b0b0b0 100%);
+  background:-webkit-linear-gradient(left, #b0b0b0 0%,#b0b0b0 50%,#b0b0b0 100%);
+  background:linear-gradient(left, #b0b0b0 0%,#b0b0b0 50%,#b0b0b0 100%);
+  width:97%;
+  display:block;
+}		
+
+#p1{
+ margin-left:15px;
+ margin-top: 7px; 
+ font-size:14px;
+ letter-spacing:0.3;
+ line-height: 1.6;
+}
+
+#p2{
+ font-size:14px;
+ letter-spacing:0.3;
+ line-height: 1.6;
+}
+</style>
+
+<body OnLoad="parent.document.title=document.title" class="mydivclass" >
+
+<div class="header">
+<ul class="a1">
+  <p class="margin a1"><a class="a1" id="a1" href="" target="Right">Article</a></p>
+  <p class="margin2 a1"><a class="a1" href="" target="">Talk</a></p>
+  
+ <form id="search" action="http://google.com/search" target="_blank">
+        <input name="q">
+        <input type="submit">
+    </form>
+	
+  <!--
+  <p id="f1" class="a1" style="float:right"><a class="active" href="#about">About</a></p>
+  -->
+</ul>
+</div>
+<div class="b1"></div>
+<div class="fbox"></div>
+<div id="search-box">
+</div>
+<h1 id="h1">Multimedia</h1>
+<div id="div1"></div>
+<p id="p1" style="font-size:12.5px;">From Wikipedia, the free encyclopedia<br><br><br>
+<div style="text-align: right"><img style="float: right; margin: 0px 0px 15px 15px;" src="m1.jpg" width="500px" /> </div>
+<p id="p2"><strong>Multimedia</strong> is content that uses a combination of different content forms such as text, audio, images, animations, video and interactive content. Multimedia contrasts with media that use only rudimentary computer displays such as text-only or traditional forms of printed or hand-produced material. <br><br>
+Multimedia can be recorded and played, displayed, interacted with or accessed by information content processing devices, such as computerized and electronic devices, but can also be part of a live performance. Multimedia devices are electronic media devices used to store and experience multimedia content. Multimedia is distinguished from mixed media in fine art; for example, by including audio it has a broader scope. In the early years of multimedia the term "rich media" was synonymous with interactive multimedia, and "hypermedia" was an application of multimedia.
+</p> 
+<h1 id="h1">Terminology</h1>
+<div id="div1"></div>
+<div style="text-align: left"><img style="float: left; margin: 15px 15px 15px 15px;" src="m2.jpg" width="500px" /> </div>
+<p id="p2">
+The term multimedia was coined by singer and artist Bob Goldstein (later 'Bobb Goldsteinn') to promote the July 1966 opening of his "LightWorks at L'Oursin" show at Southampton, Long Island. Goldstein was perhaps aware of an American artist named Dick Higgins, who had two years previously discussed a new approach to art-making he called "intermedia".
+
+On August 10, 1966, Richard Albarino of Variety borrowed the terminology, reporting: "Brainchild of songscribe-comic Bob ('Washington Square') Goldstein, the 'Lightworks' is the latest multi-media music-cum-visuals to debut as discothèque fare. Two years later, in 1968, the term "multimedia" was re-appropriated to describe the work of a political consultant, David Sawyer, the husband of Iris Sawyer—one of Goldstein's producers at L'Oursin.
+
+In the intervening forty years, the word has taken on different meanings. In the late 1970s, the term referred to presentations consisting of multi-projector slide shows timed to an audio track. However, by the 1990s 'multimedia' took on its current meaning.
+
+In the 1993 first edition of Multimedia: Making It Work, Tay Vaughan declared "Multimedia is any combination of text, graphic art, sound, animation, and video that is delivered by computer. When you allow the user – the viewer of the project – to control what and when these elements are delivered, it is interactive multimedia. When you provide a structure of linked elements through which the user can navigate, interactive multimedia becomes hypermedia."
+
+The German language society Gesellschaft für deutsche Sprache recognized the word's significance and ubiquitousness in the 1990s by awarding it the title of German 'Word of the Year' in 1995. The institute summed up its rationale by stating "[Multimedia] has become a central word in the wonderful new media world".
+
+In common usage, multimedia refers to an electronically delivered combination of media including video, still images, audio, and text in such a way that can be accessed interactively. Much of the content on the web today falls within this definition as understood by millions. Some computers which were marketed in the 1990s were called "multimedia" computers because they incorporated a CD-ROM drive, which allowed for the delivery of several hundred megabytes of video, picture, and audio data. That era saw also a boost in the production of educational multimedia CD-ROMs.
+
+The term "video", if not used exclusively to describe motion photography, is ambiguous in multimedia terminology. Video is often used to describe the file format, delivery format, or presentation format instead of "footage" which is used to distinguish motion photography from "animation" of rendered motion imagery. Multiple forms of information content are often not considered modern forms of presentation such as audio or video. Likewise, single forms of information content with single methods of information processing (e.g. non-interactive audio) are often called multimedia, perhaps to distinguish static media from active media. In the fine arts, for example, Leda Luss Luyken's ModulArt brings two key elements of musical composition and film into the world of painting: variation of a theme and movement of and within a picture, making ModulArt an interactive multimedia form of art. Performing arts may also be considered multimedia considering that performers and props are multiple forms of both content and media.
+</p>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,8 @@
+Blurple
+#7289DA
+Full white
+#FFFFFF
+Greyple
+#99AAB5
+Dark, but not black
+#2C2F33

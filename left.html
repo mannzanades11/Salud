@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>Portfolio Salud</title>
+<style>
+ul{
+margin-left:-15px;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+button.accordion {
+    background-color: #2C2F33;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+	margin-left:-10px;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #2C2F33;
+}
+
+.active, button.accordion:hover{
+background-color:#ccc;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 15px;
+    background-color: #34373C;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	width:86.5%;
+	margin-left:-10px;
+}
+
+h1{
+font-size:40px;
+font-family:Agency FB;
+color:#999;
+text-align:center;
+
+}
+body{
+margin-left:20px;
+background-color:#23272A;
+}
+p{
+color:#fff;
+}
+a{
+font-size:20px;
+font-family:Bahnschrift Condensed;
+text-decoration:none;
+color: White;
+}
+
+.yeet{
+font-family:Bahnschrift Condensed;
+text-decoration:none;
+font-size:40px;
+color: White;
+}
+a:hover{
+color:gray;
+transition:.1s;
+}
+
+li{
+margin-top:5px;
+}
+</style>
+</head>
+<body>
+<H1><a class=yeet href="right.html" target="right">TERM</a></h1>
+<button class="accordion"><p style="font-family:Agency FB; font-size:20px; font-weight:bold;">PRELIM</button>
+<div class="panel">
+<p style="font-family:Agency FB; color:white; font-size:20px;">LECTURES
+   
+   <ul type="none">
+	
+   <li><a href="https://onedrive.live.com/embed?cid=722CE574F76DB0DD&resid=722CE574F76DB0DD%21111&authkey=ACDIRLGtXD6JeDU&em=2" target="right"> Chapter 1: Introduction </a></li>
+   <li><a href="https://onedrive.live.com/embed?cid=722CE574F76DB0DD&resid=722CE574F76DB0DD%21110&authkey=AL-hHszdIbtSbgs&em=2" target="right"> Chapter 2: Texts </a></li>
+     <li><a href="https://onedrive.live.com/embed?cid=722CE574F76DB0DD&resid=722CE574F76DB0DD%21109&authkey=AF7FYZ_YrOgOL0Q&em=2" target="right"> Chapter 3: Images </a></li>
+   </ul>
+<p style="font-family:Agency FB; color:white; font-size:20px;">ACTIVITIES
+		   <ul type="none">
+		<li><a href="main1.html" target="right"> Motivational Quotes</a></li>
+		<li><a href="main.html" target="right">Text Based Website</a></li>
+		<li><a href="traffic.png" target="right">Traffic Sign</a></li>
+   </ul>
+</div>
+
+<button class="accordion"><p style="font-family:Agency FB; font-size:20px; font-weight:bold;">MIDTERM</button>
+<div class="panel">
+<p style="font-family:Agency FB; color:white; font-size:20px;">LECTURES
+   <ul type="none">
+<li><a href="https://onedrive.live.com/embed?cid=722CE574F76DB0DD&resid=722CE574F76DB0DD%21107&authkey=ALcu6xlS99Rg4jA&em=2" target="right">Chapter 4: Sound</a></li>
+<li><a href="https://onedrive.live.com/embed?cid=722CE574F76DB0DD&resid=722CE574F76DB0DD%21106&authkey=AFx1Yii4WshprO0&em=2" target="right">Chapter 5: Animation</a></li>
+<li><a href="https://onedrive.live.com/embed?cid=722CE574F76DB0DD&resid=722CE574F76DB0DD%21108&authkey=AMRWgSIL2SONCIA&em=2" target="right">Dreamweaver-Tutorial</a></li>
+   <li><a href=""></a></li>
+      </ul>
+<p style="font-family:Agency FB; color:white; font-size:20px;">ACTIVITIES
+		   <ul type="none">
+		<li><a href="https://saludjuancarlos.github.io/MultimediaMidtermExerciseSounds/" target="right">Sound</a></li>
+		<li><a href="sport.gif" target="right">Sports Animation</a></li>
+		<li><a href="TT.mp4" target="right">Tunog Tao</a></li>
+		
+		
+</div>
+<button class="accordion"><p style="font-family:Agency FB; font-size:20px; font-weight:bold;">FINALS</button>
+<div class="panel">
+<p style="font-family:Agency FB; color:white; font-size:20px;">LECTURES
+   <ul type="none">
+
+   <li><a href=""></a></li>
+      </ul>
+<p style="font-family:Agency FB; color:white; font-size:20px;">ACTIVITIES
+</div>
+
+<script>
+ var acc = document.getElementsByClassName("accordion");
+  var i;
+	
+  var firstAccordion = acc[0];
+  var firstPanel = firstAccordion.nextElementSibling;
+  firstAccordion.classList.add("active");
+  firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+      var isActive = this.classList.contains("active");
+
+      var allAccordions = document.getElementsByClassName("accordion");
+      for (j = 0; j < allAccordions.length; j++) {
+        allAccordions[j].classList.remove("active");
+
+        var panel = allAccordions[j].nextElementSibling;
+        var maxHeightValue = getStyle(panel, "maxHeight");
+      
+      if (maxHeightValue !== "0px") {
+          panel.style.maxHeight = null;
+        }
+      }
+
+      isActive ? this.classList.remove("active") : this.classList.add("active");
+
+      var panel = this.nextElementSibling;
+      var maxHeightValue = getStyle(panel, "maxHeight");
+      
+      if (maxHeightValue !== "0px") {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    };
+  }
+  
+  function getStyle(el, styleProp) {
+  var value, defaultView = (el.ownerDocument || document).defaultView;
+ if (defaultView && defaultView.getComputedStyle) {
+    styleProp = styleProp.replace(/([A-Z])/g, "-$1").toLowerCase();
+    return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+  } else if (el.currentStyle) { // IE
+    styleProp = styleProp.replace(/\-(\w)/g, function(str, letter) {
+      return letter.toUpperCase();
+    });
+    value = el.currentStyle[styleProp];
+    if (/^\d+(em|pt|%|ex)?$/i.test(value)) { 
+      return (function(value) {
+        var oldLeft = el.style.left, oldRsLeft = el.runtimeStyle.left;
+        el.runtimeStyle.left = el.currentStyle.left;
+        el.style.left = value || 0;
+        value = el.style.pixelLeft + "px";
+        el.style.left = oldLeft;
+        el.runtimeStyle.left = oldRsLeft;
+        return value;
+      })(value);
+    }
+    return value;
+  }
+}
+</script>
+
+
+</body>
+</html>
